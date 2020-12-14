@@ -55,18 +55,7 @@ function draw() {
   rectMode(CENTER);
   background("grey");
 
-  stone.display();
-  mango1.display();
-  mango2.display();
-  mango3.display();
-  mango4.display();
-  mango5.display();
-  mango6.display();
-  mango7.display();
-  mango8.display();
-  mango9.display();
-  mango10.display();
-  ground.display();
+
 
   detectCollousion(stones,mango1);
   detectCollousion(stones,mango2);
@@ -82,7 +71,18 @@ function draw() {
  
 }
 
-
+  stone.display();
+  mango1.display();
+  mango2.display();
+  mango3.display();
+  mango4.display();
+  mango5.display();
+  mango6.display();
+  mango7.display();
+  mango8.display();
+  mango9.display();
+  mango10.display();
+ 
 
 function mouseDragged(){
 	Matter.body.setPosition(stones.body,{x:mouseX,y:mouseY});
